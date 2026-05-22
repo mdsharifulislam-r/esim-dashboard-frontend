@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const baseApi = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://147.93.41.75:5005/api/v1',
+    baseUrl: 'http://152.42.208.178:5000/api/v1',
     prepareHeaders: (headers) => {
       const token = localStorage.getItem('token');
       if (token) {
@@ -30,7 +30,7 @@ export const baseApi = createApi({
 });
 
 
-export const imageUrl = 'http://147.93.41.75:5005';
+export const imageUrl = 'http://152.42.208.178:5000';
 
 export const getImageUrl = (path: string) => {
   if(path.startsWith('http')) {
