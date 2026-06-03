@@ -20,6 +20,7 @@ import InfluencersPage from '@/pages/influencers/InfluencersPage';
 import BlogsPage from '@/pages/blogs/BlogsPage';
 import BlogFormPage from '@/pages/blogs/BlogFormPage';
 import CouponsPage from '@/pages/coupons/CouponsPage';
+import BannerPage from '@/pages/banner/BannerPage';
 import FaqsPage from '@/pages/faqs/FaqsPage';
 import ReviewsPage from '@/pages/reviews/ReviewsPage';
 import SupportPage from '@/pages/support/SupportPage';
@@ -47,6 +48,7 @@ export default function App() {
             <Route path="/blogs/new" element={<BlogFormPage />} />
             <Route path="/blogs/edit/:id" element={<BlogFormPage />} />
             <Route path="/coupons" element={<CouponsPage />} />
+            <Route path="/banner" element={<BannerPage />} />
             <Route path="/faqs" element={<FaqsPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/support" element={<SupportPage />} />

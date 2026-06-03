@@ -13,6 +13,7 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   GlobalOutlined,
+  BgColorsOutlined,
 } from '@ant-design/icons';
 
 interface SidebarProps {
@@ -27,6 +28,7 @@ const menuItems = [
   { key: 'influencers', path: '/influencers', icon: <TeamOutlined />, label: 'Influencers' },
   { section: 'Content' },
   { key: 'blogs', path: '/blogs', icon: <FileTextOutlined />, label: 'Blogs' },
+  { key: 'banner', path: '/banner', icon: <BgColorsOutlined />, label: 'Banners' },
   { key: 'coupons', path: '/coupons', icon: <TagOutlined />, label: 'Coupons' },
   { key: 'faqs', path: '/faqs', icon: <QuestionCircleOutlined />, label: 'FAQs' },
   { section: 'Engagement' },

@@ -170,3 +170,11 @@ export type IDashboardStats = {
   totalRavinue: number;
   totalOrders: number;
 };
+
+export interface Banner {
+  _id: string;
+  text: string;
+  status: 'active' | 'inactive';
+  createdAt: string;
+  updatedAt: string;
+}
