@@ -178,3 +178,25 @@ export interface Banner {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface Admin {
+  _id: string;
+  name: string;
+  email: string;
+  role: 'ADMIN' | 'SUPER_ADMIN';
+  image: string;
+  status: 'active' | 'inactive' | 'delete';
+  verified: boolean;
+  age: number | null;
+  date_of_birth: string | null;
+  gender: string | null;
+  country: string;
+  cover: string;
+  contact: string;
+  discount: number;
+  commission: number;
+  ref_referral_code: string | null;
+  refferal_code: string;
+  createdAt: string;
+  updatedAt: string;
+}

@@ -14,6 +14,7 @@ import {
   MenuUnfoldOutlined,
   GlobalOutlined,
   BgColorsOutlined,
+  SettingOutlined,
 } from '@ant-design/icons';
 
 interface SidebarProps {
@@ -37,6 +38,7 @@ const menuItems = [
   { section: 'Settings' },
   { key: 'disclaimer', path: '/disclaimer', icon: <SafetyOutlined />, label: 'Disclaimer' },
   { key: 'discount', path: '/discount', icon: <PercentageOutlined />, label: 'Discount' },
+  { key: 'admins', path: '/admins', icon: <SettingOutlined />, label: 'Manage Admins' },
 ];
 
 export default function Sidebar({ collapsed, onToggle }: SidebarProps) {
