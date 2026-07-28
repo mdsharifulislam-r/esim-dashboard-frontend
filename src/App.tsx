@@ -26,6 +26,7 @@ import ReviewsPage from '@/pages/reviews/ReviewsPage';
 import SupportPage from '@/pages/support/SupportPage';
 import DisclaimerPage from '@/pages/disclaimer/DisclaimerPage';
 import DiscountPage from '@/pages/discount/DiscountPage';
+import PricingPage from '@/pages/pricing/PricingPage';
 import AdminsPage from '@/pages/admins/AdminsPage';
 
 export default function App() {
@@ -55,6 +56,7 @@ export default function App() {
             <Route path="/support" element={<SupportPage />} />
             <Route path="/disclaimer" element={<DisclaimerPage />} />
             <Route path="/discount" element={<DiscountPage />} />
+            <Route path="/pricing" element={<PricingPage />} />
             <Route path="/admins" element={<AdminsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/change-password" element={<ChangePasswordPage />} />

@@ -14,6 +14,7 @@ import {
   MenuUnfoldOutlined,
   GlobalOutlined,
   BgColorsOutlined,
+  DollarOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
 
@@ -38,6 +39,7 @@ const menuItems = [
   { section: 'Settings' },
   { key: 'disclaimer', path: '/disclaimer', icon: <SafetyOutlined />, label: 'Disclaimer' },
   { key: 'discount', path: '/discount', icon: <PercentageOutlined />, label: 'Discount' },
+  { key: 'pricing', path: '/pricing', icon: <DollarOutlined />, label: 'Platform Margin' },
   { key: 'admins', path: '/admins', icon: <SettingOutlined />, label: 'Manage Admins' },
 ];
 

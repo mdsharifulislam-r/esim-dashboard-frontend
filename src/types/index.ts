@@ -128,6 +128,12 @@ export interface Discount {
   updatedAt: string;
 }
 
+export interface PricingRules {
+  _id: string;
+  margin_price: number;
+  tax_percent: number;
+}
+
 export interface AuthUser {
   _id: string;
   name: string;
