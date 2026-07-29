@@ -28,7 +28,7 @@ export default function BlogFormPage() {
   }, [blogData, form]);
 
   const onFinish = async (values: { title: string; status: string }) => {
-    if (!content || content === '<p><br></p>') {
+    if (!content || content === '<p><br></p>' || content === '<p></p>') {
       message.error('Please add blog content');
       return;
     }
