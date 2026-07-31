@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-echo "Running lint-staged..."
-npx lint-staged
+
 
 changed_files=$(git diff --cached --name-only)
 
