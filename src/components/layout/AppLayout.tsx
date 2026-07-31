@@ -14,7 +14,7 @@ const breadcrumbMap: Record<string, string> = {
   '/support': 'Support Messages',
   '/disclaimer': 'Disclaimer & Pages',
   '/discount': 'Discount Settings',
-  '/pricing': 'Platform Margin',
+  '/pricing': 'Pricing Rules',
   '/profile': 'My Profile',
   '/change-password': 'Change Password',
   '/notifications': 'Notifications',

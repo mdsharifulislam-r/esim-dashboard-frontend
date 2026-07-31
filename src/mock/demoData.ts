@@ -225,11 +225,24 @@ export const demoDiscount: Discount = {
   updatedAt: daysAgo(1),
 };
 
-export const demoPricingRules = {
-  _id: 'pricing-1',
-  margin_price: 30,
-  tax_percent: 5,
-};
+export const demoPricingRules = [
+  {
+    _id: 'pricing-1',
+    margin_price: 10,
+    tax_percent: 5,
+    name: 'Bangladesh',
+    type: 'country' as const,
+    updatedAt: daysAgo(1),
+  },
+  {
+    _id: 'pricing-2',
+    margin_price: 15,
+    tax_percent: 5,
+    name: 'Global',
+    type: 'global' as const,
+    updatedAt: daysAgo(3),
+  },
+];
 
 export const demoDisclaimer: Record<string, Disclaimer> = {
   terms: {

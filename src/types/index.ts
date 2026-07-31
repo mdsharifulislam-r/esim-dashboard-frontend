@@ -132,7 +132,18 @@ export interface PricingRules {
   _id: string;
   margin_price: number;
   tax_percent: number;
+  name: string;
+  type: 'country' | 'region' | 'global';
+  createdAt?: string;
+  updatedAt?: string;
 }
+
+export type PricingRulePayload = {
+  margin_price: number;
+  name: string;
+  type: 'country' | 'region' | 'global';
+  tax_percent?: number;
+};
 
 export interface AuthUser {
   _id: string;
