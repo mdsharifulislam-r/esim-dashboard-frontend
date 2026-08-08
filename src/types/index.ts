@@ -196,6 +196,22 @@ export interface Banner {
   updatedAt: string;
 }
 
+export interface ImageBanner {
+  _id: string;
+  thumbnail: string;
+  title: string;
+  status: 'active' | 'inactive';
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Newsletter {
+  _id: string;
+  email: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
 export interface Admin {
   _id: string;
   name: string;

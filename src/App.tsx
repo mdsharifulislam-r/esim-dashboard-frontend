@@ -27,6 +27,8 @@ import SupportPage from '@/pages/support/SupportPage';
 import DisclaimerPage from '@/pages/disclaimer/DisclaimerPage';
 import DiscountPage from '@/pages/discount/DiscountPage';
 import PricingPage from '@/pages/pricing/PricingPage';
+import ImageBannerPage from '@/pages/image-banner/ImageBannerPage';
+import NewsletterPage from '@/pages/newsletter/NewsletterPage';
 import AdminsPage from '@/pages/admins/AdminsPage';
 
 export default function App() {
@@ -51,6 +53,8 @@ export default function App() {
             <Route path="/blogs/edit/:id" element={<BlogFormPage />} />
             <Route path="/coupons" element={<CouponsPage />} />
             <Route path="/banner" element={<BannerPage />} />
+            <Route path="/image-banner" element={<ImageBannerPage />} />
+            <Route path="/newsletter" element={<NewsletterPage />} />
             <Route path="/faqs" element={<FaqsPage />} />
             <Route path="/reviews" element={<ReviewsPage />} />
             <Route path="/support" element={<SupportPage />} />

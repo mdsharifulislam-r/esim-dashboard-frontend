@@ -30,6 +30,8 @@ export const baseApi = createApi({
     'Banner',
     'Admin',
     'PricingRules',
+    'ImageBanner',
+    'Newsletter',
   ],
   endpoints: () => ({}),
 });

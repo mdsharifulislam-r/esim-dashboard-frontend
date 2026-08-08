@@ -15,6 +15,8 @@ import {
   GlobalOutlined,
   BgColorsOutlined,
   DollarOutlined,
+  PictureOutlined,
+  MailOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
 
@@ -31,11 +33,13 @@ const menuItems = [
   { section: 'Content' },
   { key: 'blogs', path: '/blogs', icon: <FileTextOutlined />, label: 'Blogs' },
   { key: 'banner', path: '/banner', icon: <BgColorsOutlined />, label: 'Banners' },
+  { key: 'image-banner', path: '/image-banner', icon: <PictureOutlined />, label: 'Image Banners' },
   { key: 'coupons', path: '/coupons', icon: <TagOutlined />, label: 'Coupons' },
   { key: 'faqs', path: '/faqs', icon: <QuestionCircleOutlined />, label: 'FAQs' },
   { section: 'Engagement' },
   { key: 'reviews', path: '/reviews', icon: <StarOutlined />, label: 'Reviews' },
   { key: 'support', path: '/support', icon: <MessageOutlined />, label: 'Support' },
+  { key: 'newsletter', path: '/newsletter', icon: <MailOutlined />, label: 'Newsletter' },
   { section: 'Settings' },
   { key: 'disclaimer', path: '/disclaimer', icon: <SafetyOutlined />, label: 'Disclaimer' },
   { key: 'discount', path: '/discount', icon: <PercentageOutlined />, label: 'Discount' },
