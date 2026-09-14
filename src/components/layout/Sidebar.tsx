@@ -17,6 +17,7 @@ import {
   DollarOutlined,
   PictureOutlined,
   MailOutlined,
+  ShoppingOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
 
@@ -29,6 +30,7 @@ const menuItems = [
   { key: 'dashboard', path: '/dashboard', icon: <DashboardOutlined />, label: 'Dashboard' },
   { section: 'Management' },
   { key: 'users', path: '/users', icon: <UserOutlined />, label: 'Users' },
+  { key: 'orders', path: '/orders', icon: <ShoppingOutlined />, label: 'Orders' },
   { key: 'influencers', path: '/influencers', icon: <TeamOutlined />, label: 'Influencers' },
   { section: 'Content' },
   { key: 'blogs', path: '/blogs', icon: <FileTextOutlined />, label: 'Blogs' },

@@ -212,6 +212,128 @@ export interface Newsletter {
   updatedAt: string;
 }
 
+export interface OrderUser {
+  _id: string;
+  name: string;
+  email: string;
+  image?: string;
+  contact?: string;
+}
+
+export interface OrderSim {
+  id: number;
+  created_at: string;
+  iccid: string;
+  lpa: string;
+  matching_id: string;
+  qrcode: string;
+  qrcode_url: string;
+  apn_type: string;
+  apn_value: string | null;
+  is_roaming: boolean;
+  direct_apple_installation_url?: string;
+  apn?: {
+    ios: { apn_type: string; apn_value: string | null };
+    android: { apn_type: string; apn_value: string | null };
+  };
+}
+
+export interface OrderSupportedCountry {
+  country_code: string;
+  title: string;
+  image?: { width: number; height: number; url: string };
+}
+
+export interface OrderOperatorInfo {
+  country_code: string;
+  name: string;
+  image?: string;
+}
+
+export interface Order {
+  _id: string;
+  orderId?: string;
+  packageId: string;
+  package_name: string;
+  id: number;
+  code: string;
+  type: string;
+  country: string;
+  quantity: number;
+  user: string | OrderUser;
+  validity: number;
+  data: string;
+  text?: string | null;
+  voice?: string | null;
+  price: number;
+  net_price: number;
+  startDate: string;
+  endDate?: string;
+  status: string;
+  manual_installation?: string;
+  qr_installation?: string;
+  installation_guides?: string;
+  sims: OrderSim[];
+  supported_countries: OrderSupportedCountry[];
+  oparator_info?: OrderOperatorInfo;
+  system_commission?: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface OrderRealTimeUses {
+  remaining: number;
+  total: number;
+  expired_at: string;
+  is_unlimited: boolean;
+  status: string;
+  remaining_voice: number;
+  remaining_text: number;
+  total_voice: number;
+  total_text: number;
+}
+
+export interface OrderGuidelineSteps {
+  [key: string]: string;
+}
+
+export interface OrderInstallationGuide {
+  steps: OrderGuidelineSteps;
+  qr_code_data?: string;
+  qr_code_url?: string;
+  smdp_address_and_activation_code?: string;
+  smdp_address?: string;
+  activation_code?: string;
+}
+
+export interface OrderNetworkSetup {
+  steps: OrderGuidelineSteps;
+  apn_type: string;
+  apn_value: string | null;
+  is_roaming: boolean;
+}
+
+export interface OrderPlatformGuideline {
+  model: string | null;
+  version: string | null;
+  direct_apple_installation_url?: string;
+  installation_via_qr_code: OrderInstallationGuide;
+  installation_manual: OrderInstallationGuide;
+  network_setup: OrderNetworkSetup;
+}
+
+export interface OrderGuidelines {
+  language: string;
+  ios: OrderPlatformGuideline[];
+  android: OrderPlatformGuideline[];
+}
+
+export interface OrderDetails {
+  order: Order;
+  realTimeUses?: OrderRealTimeUses;
+  guidelines?: OrderGuidelines;
+}
+
 export interface Admin {
   _id: string;
   name: string;

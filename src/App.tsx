@@ -29,6 +29,8 @@ import DiscountPage from '@/pages/discount/DiscountPage';
 import PricingPage from '@/pages/pricing/PricingPage';
 import ImageBannerPage from '@/pages/image-banner/ImageBannerPage';
 import NewsletterPage from '@/pages/newsletter/NewsletterPage';
+import OrdersPage from '@/pages/orders/OrdersPage';
+import OrderDetailsPage from '@/pages/orders/OrderDetailsPage';
 import AdminsPage from '@/pages/admins/AdminsPage';
 
 export default function App() {
@@ -47,6 +49,8 @@ export default function App() {
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/users" element={<UsersPage />} />
+            <Route path="/orders" element={<OrdersPage />} />
+            <Route path="/orders/:id" element={<OrderDetailsPage />} />
             <Route path="/influencers" element={<InfluencersPage />} />
             <Route path="/blogs" element={<BlogsPage />} />
             <Route path="/blogs/new" element={<BlogFormPage />} />

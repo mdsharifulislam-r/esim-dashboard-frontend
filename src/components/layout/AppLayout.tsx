@@ -6,6 +6,7 @@ import Header from './Header';
 const breadcrumbMap: Record<string, string> = {
   '/dashboard': 'Dashboard',
   '/users': 'Users',
+  '/orders': 'Orders',
   '/influencers': 'Influencers',
   '/blogs': 'Blogs',
   '/coupons': 'Coupons',
@@ -26,7 +27,9 @@ export default function AppLayout() {
   const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
 
-  const breadcrumb = breadcrumbMap[location.pathname] || 'Admin Panel';
+  const breadcrumb =
+    breadcrumbMap[location.pathname] ||
+    (location.pathname.startsWith('/orders/') ? 'Order Details' : 'Admin Panel');
 
   return (
     <div className='flex w-full'>
